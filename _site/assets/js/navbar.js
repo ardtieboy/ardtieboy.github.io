@@ -1,6 +1,6 @@
 $(function () {
   // Sidebar toggle behavior
   $('#sidebarCollapse').on('click', function () {
-    $('#sidebar, #content').toggleClass('active');
+    $('#sidebar, #content, #social-icons, #profile-pic').toggleClass('active');
   });
 });

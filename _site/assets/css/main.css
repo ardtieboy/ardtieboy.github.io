@@ -3229,21 +3229,32 @@ body { background: #FFFFFF; background: -webkit-linear-gradient(to right, #FFFFF
 .page-content { width: calc(100% - 17rem); margin-left: 17rem; transition: all 0.4s; }
 
 /* for toggle behavior */
+#social-icons { padding-left: 0.5em; color: black; }
+
 #sidebar.active { margin-left: -17rem; }
 
 #content.active { width: 100%; margin: 0; }
+
+.regular-text { line-height: 1.5em; padding-left: 4em; padding-right: 2em; }
+
+#profile-pic { border-radius: 50%; width: inherit; padding-bottom: 1em; }
 
 @media (max-width: 768px) { #sidebar { margin-left: -17rem; }
   #sidebar.active { margin-left: 0; }
   #content { width: 100%; margin: 0; }
   #content.active { margin-left: 17rem; width: calc(100% - 17rem); }
-  #toggle-button-text { display: none; } }
+  #toggle-button-text { display: none; }
+  .regular-text { padding: 0; }
+  #social-icons.active { display: none; }
+  #profile-pic.active { display: none; } }
 
-.separator { margin: 3rem 0; border-bottom: 1px dashed black; }
+.separator { margin: 1rem 0 3rem; border-bottom: 1px dashed black; }
 
 .text-uppercase { letter-spacing: 0.1em; }
 
 .text-gray { color: #aaa; }
+
+.display-custom-heading { font-size: 3.5rem; font-weight: 100; line-height: 1.2; padding: 0.5em 0 0 0; }
 
 /*! Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
 /* FONT PATH -------------------------- */

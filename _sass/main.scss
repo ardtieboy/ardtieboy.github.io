@@ -39,6 +39,11 @@ body {
 
 /* for toggle behavior */
 
+#social-icons {
+  padding-left: 0.5em;
+  color: black;
+}
+
 #sidebar.active {
   margin-left: -17rem;
 }
@@ -46,6 +51,18 @@ body {
 #content.active {
   width: 100%;
   margin: 0;
+}
+
+.regular-text {
+  line-height: 1.5em;
+  padding-left: 4em;
+  padding-right: 2em;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  width: inherit;
+  padding-bottom: 1em;
 }
 
 @media (max-width: 768px) {
@@ -66,10 +83,19 @@ body {
   #toggle-button-text {
     display: none;
   }
+  .regular-text {
+    padding: 0;
+  }
+  #social-icons.active {
+    display: none;
+  }
+  #profile-pic.active {
+    display: none;
+  }
 }
 
 .separator {
-  margin: 3rem 0;
+  margin: 1rem 0 3rem;
   border-bottom: 1px dashed black;
 }
 
@@ -80,3 +106,11 @@ body {
 .text-gray {
   color: #aaa;
 }
+
+.display-custom-heading {
+  font-size: 3.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+  padding: 0.5em 0 0 0;
+}
+
