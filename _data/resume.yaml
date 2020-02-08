@@ -1,0 +1,16 @@
+education:
+  - name: 6WeWi
+    type: /
+  - name: Architecture
+    type: Master
+  - name: Electronical Engineer
+    type: Master
+  - name: Artifical Intelligence @ Home
+    type: Microdegree
+  
+experience:
+  - name: Telenet (9lives)
+    function: Editor
+  - name: \'t Ganzeke
+  - name: Melexis
+  

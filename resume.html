@@ -2,4 +2,40 @@
 layout: default
 title: "Ard's homepage"
 ---
-<h2 class="display-4 text-black">Resume</h2>
+
+<h2 class="display-4 text-black">Ard Scheirlynck</h2>
+<h3 class="font-weight-light">Developer, Geek and Editor @9lives.be</h3>
+<div class="display-custom-heading text-center">Resume</div>
+<div class="separator"></div>
+<div class="row text-black">
+    <div class="col-sm-2">
+        <img src="assets/images/avatar.png" id="profile-pic-resume"></img>
+    </div>
+    <div class="col-sm">
+        <p class="lead regular-text-resume">
+            Sales blablabla
+        </p>
+    </div>
+</div>
+<div class="display-custom-heading text-center">💼 Experience</div>
+<div class="separator"></div>
+<div class="row text-black">
+    {% for education in site.data.resume.education %}
+    <div class="col-sm">
+        <p class="lead regular-text-resume">
+            {{education.name}}
+        </p>
+    </div>
+    {% endfor %}
+</div>
+<div class="display-custom-heading text-center">Education</div>
+<div class="separator"></div>
+<div class="row text-black">
+    {% for experience in site.data.resume.experience %}
+    <div class="col-sm">
+        <p class="lead regular-text-resume">
+            {{experience.name}}
+        </p>
+    </div>
+    {% endfor %}
+</div>

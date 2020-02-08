@@ -59,10 +59,23 @@ body {
   padding-right: 2em;
 }
 
+.regular-text-resume {
+  line-height: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 #profile-pic {
   border-radius: 50%;
   width: inherit;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+#profile-pic-resume {
+  border-radius: 50%;
+  width: 6em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -113,4 +126,6 @@ body {
   line-height: 1.2;
   padding: 0.5em 0 0 0;
 }
+
+
 

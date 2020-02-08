@@ -16,7 +16,7 @@
         <li class="nav-item">
             <a href="{{ "index.html" | relative_url }}" {% if page.url == "/" | relative_url %}
                 class="nav-link text-dark font-italic bg-light" {% endif %} class="nav-link text-dark font-italic">
-                <i class="fa fa-th-large mr-3 text-black fa-fw"></i>
+                <i class="fa fa-home mr-3 text-black fa-fw"></i>
                 Home
             </a>
         </li>
@@ -39,17 +39,15 @@
     <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Projects</p>
 
     <ul class="nav flex-column bg-white mb-0">
+        {% for post in site.posts %}
         <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
-                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-                Project 1
+            <a href="{{ post.url | relative_url }}" {% if page.url == post.url %}
+                class="nav-link text-dark font-italic bg-light" {% endif %} class="nav-link text-dark font-italic">
+                <i class="fa fa-picture-o mr-3 text-black fa-fw"></i>
+                {{ post.title }}
             </a>
         </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link text-dark font-italic">
-                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-                Project 2
-            </a>
-        </li>
+        {% endfor %}
     </ul>
+
 </div>
