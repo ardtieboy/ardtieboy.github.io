@@ -16,6 +16,8 @@
     <i class="fa fa-bars mr-2"></i>
     <small id="toggle-button-text" class="text-uppercase font-weight-bold">Toggle</small>
 </button>
+<a href="https://www.linkedin.com/in/ard-scheirlynck-b5a26a8b/"><i id="social-icons"
+        class="fa fa-linkedin fa-3x float-right"></i></a>
 <a href="https://twitter.com/Ard_Scheirlynck"><i id="social-icons" class="fa fa-twitter fa-3x float-right"></i></a>
 <a href="https://www.facebook.com/ard.scheirlynck"><i id="social-icons"
         class="fa fa-facebook fa-3x float-right"></i></a>
@@ -76,36 +78,50 @@
     <div class="separator"></div>
     <h2 id="introduction">Introduction</h2>
 
-<p>In the summer of ‘18 we decided to buy a dog. Our little friend (a.k.a. Nalu) would arrive in September, meaning summer holidays we’re over and we’d be back to work.<br />
-During his first days, I was able to take some days off to keep an eye on him. However after a week his first he had to spent his first day ‘home alone’.</p>
+<p>In the summer of ‘18 we decided to buy a dog. Our little friend (a.k.a. Nalu) would arrive in September, meaning summer holidays were over and we’d be back to work by the time of his arrival. During his first days, I was able to take some days off to keep an eye on him. However after a week his first he had to spent his first day ‘home alone’.</p>
 
 <p>I’d wanted to keep an eye open on my little friend when I was at work, so I bought a Raspberry Pi, a PiCam a Servo-arm and started hacking something together.</p>
 
 <h2 id="tech">Tech</h2>
-<p>s
-sdf</p>
+
+<p>When I started working on this project, I was pretty familiar with the Raspberry Pi-hardware and related Python-libraries such as gpiozero and picamera. 
+The only thing I needed was some kind of server to tie all lose ends together. At that time we were experimenting at Melexis with the Django-framework.
+It’s was tempting to start playing here with Django as well, but I realised quite quickly Django would be overkill.</p>
+
+<p>I decided to switch to something more lightweight (and less complex) and ended up with Flask. As a matter of fact, I forked a <a href="https://github.com/miguelgrinberg/campy">repository</a> on github which included already a big part of the work that needed to be done. I added authentication, a new front-end template and integration with my Servo-arm
+and the <strong>NaluCam</strong> was born. The code quality is not that good and testing these kind of things we’re pretty hard since we’re talking about hardware integrations.</p>
+
+<p>However the <strong>NaluCam</strong> still does the trick and is still used on a daily basis.</p>
+
+<h2 id="improvements-and-further-work">Improvements and further work</h2>
+
+<p>In general the code needs to be cleaned up. I also need to find a better way of testing these kind of things in which hardware is included. Certainly the integration with 
+the camera is a pain in the ass; over SSH it’s impossible to display images. This means that everytime I’m working on this project, I need to hook up my Raspberry Pi to a monitor, keyboard and mouse.</p>
+
+<p>Also some cool features such as temperature monitoring and voice integration could be added. It could also be a cool idea to add some kind of small engines and turn the 
+NaluCam into some kind of entertaining superdeluxe ‘ball fetcher’-machine which can be remotely controlled? Want to contribute? For the project <a href="https://github.com/ardtieboy/campy">here</a>.</p>
 
 
-
+    <h2>Images</h2>
     <div class="row text-black">
-      <div class="col-sm-6 col-centered">
+      <div style="margin-left: auto; margin-right: auto; width: 50%;">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             
             <div  class="carousel-item active"  class="carousel-item">
-              <img class="d-block w-100" src="/assets/images/nalucam_pic1.jpeg" alt="First slide">
+              <img class="d-block w-100 " src="/assets/images/nalucam_pic1.jpeg" alt="First slide">
             </div>
             
             <div  class="carousel-item">
-              <img class="d-block w-100" src="/assets/images/nalucam_pic2.jpeg" alt="First slide">
+              <img class="d-block w-100 " src="/assets/images/nalucam_pic2.jpeg" alt="First slide">
             </div>
             
             <div  class="carousel-item">
-              <img class="d-block w-100" src="/assets/images/nalucam_login.png" alt="First slide">
+              <img class="d-block w-100 " src="/assets/images/nalucam_login.png" alt="First slide">
             </div>
             
             <div  class="carousel-item">
-              <img class="d-block w-100" src="/assets/images/nalucam_navigate.png" alt="First slide">
+              <img class="d-block w-100 " src="/assets/images/nalucam_navigate.png" alt="First slide">
             </div>
             
           </div>
@@ -120,8 +136,6 @@ sdf</p>
         </div>
       </div>
     </div>
-
-
     <script src="/assets/js/jquery-3.3.1.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
 <script src="/assets/js/navbar.js"></script>

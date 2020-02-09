@@ -17,13 +17,14 @@
     <div class="separator"></div>
     {{ content }}
 
+    <h2>Images</h2>
     <div class="row text-black">
-      <div class="col-sm-6 col-centered">
+      <div style="margin-left: auto; margin-right: auto; width: 50%;">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             {% for image in page.pics %}
             <div {% if forloop.index ==1 %} class="carousel-item active" {% endif %} class="carousel-item">
-              <img class="d-block w-100" src="{{image}}" alt="First slide">
+              <img class="d-block w-100 " src="{{image}}" alt="First slide">
             </div>
             {% endfor %}
           </div>
@@ -38,8 +39,6 @@
         </div>
       </div>
     </div>
-
-
     {% include footbar.html %}
   </div>
 </body>

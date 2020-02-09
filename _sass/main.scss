@@ -130,3 +130,11 @@ body {
 [id^="hoverbox"] {
   color: gainsboro;
 }
+
+#carousel-image {
+  width: 200px; /* width of container */
+  height: 200px; /* height of container */
+  object-fit: cover;
+  object-position: 20% 10px; 
+  border: 5px solid black;
+}
