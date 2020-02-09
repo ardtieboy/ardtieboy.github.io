@@ -5,7 +5,7 @@ title: "Ard's homepage"
 
 <h2 class="display-4 text-black">Ard Scheirlynck</h2>
 <h3 class="font-weight-light">Developer, Geek and Editor @9lives.be</h3>
-<div class="display-custom-heading text-center">💌 Readme.txt</div>
+<div class="display-custom-heading text-center">🤟 Readme.txt</div>
 <div class="separator"></div>
 <div class="row text-black">
     <div class="col-sm-2">
@@ -35,8 +35,8 @@ title: "Ard's homepage"
     {% assign educationCounter = 0 %}
     {% for education in site.data.resume.education %}
     <div class="col-sm">
-        <div style="cursor: default;" id="hoverbox-education-{{educationCounter}}" {% if educationCounter == 0%}
-            class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
+        <div style="cursor: default; height: 12em;" id="hoverbox-education-{{educationCounter}}"
+            {% if educationCounter == 0%} class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
             class="lead regular-text-resume bg-light">
             <b>{{education.name}}</b>
             {% if education.period != ""%}<li>{{education.period}}</li>{% endif %}
