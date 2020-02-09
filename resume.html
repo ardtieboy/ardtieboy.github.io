@@ -5,7 +5,7 @@ title: "Ard's homepage"
 
 <h2 class="display-4 text-black">Ard Scheirlynck</h2>
 <h3 class="font-weight-light">Developer, Geek and Editor @9lives.be</h3>
-<div class="display-custom-heading text-center">Resume</div>
+<div class="display-custom-heading text-center">💌 Readme.txt</div>
 <div class="separator"></div>
 <div class="row text-black">
     <div class="col-sm-2">
@@ -13,29 +13,110 @@ title: "Ard's homepage"
     </div>
     <div class="col-sm">
         <p class="lead regular-text-resume">
-            Sales blablabla
+            Not your typical geek; that’s how I would describe myself. I consider myself a social guy who’s always up
+            for a challenge and is eager to constantly learn
+            new things. I like working in teams and will not hesitate to push the rest of the team to new levels if
+            that’s within my possibilities.
+        </p>
+        <p class="lead regular-text-resume">
+            Furthermore I’m very down to earth; I know where my knowledge begins and ends, therefore I think it’s my
+            responsibility to either apply my knowledge
+            where applicable or ask questions if something’s not clear to me; I’m responsible for my own learning.
+            I’m up for challenges in which I can freely interact with others, have some creative freedom and from which
+            I can learn a lot.
+            I have a preference for jobs in which I can combine analytical task with coding, though I prefer the latter
+            one.
         </p>
     </div>
 </div>
 <div class="display-custom-heading text-center">💼 Experience</div>
 <div class="separator"></div>
 <div class="row text-black">
+    {% assign educationCounter = 0 %}
     {% for education in site.data.resume.education %}
     <div class="col-sm">
-        <p class="lead regular-text-resume">
-            {{education.name}}
-        </p>
+        <div style="cursor: default;" id="hoverbox-education-{{educationCounter}}" {% if educationCounter == 0%}
+            class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
+            class="lead regular-text-resume bg-light">
+            <b>{{education.name}}</b>
+            {% if education.period != ""%}<li>{{education.period}}</li>{% endif %}
+            {% if education.school != ""%}<li>{{education.school}}</li>{% endif %}
+            {% if education.result != ""%}<li>{{education.result}}</li>{% endif %}
+            {% if education.thesis != ""%}<li>{{education.thesis}}</li>{% endif %}
+        </div>
     </div>
+    {% assign educationCounter = educationCounter | plus: 1 %}
     {% endfor %}
 </div>
-<div class="display-custom-heading text-center">Education</div>
+
+<div class="display-custom-heading text-center">🎓 Education</div>
 <div class="separator"></div>
 <div class="row text-black">
+    {% assign experienceCounter = 0 %}
     {% for experience in site.data.resume.experience %}
     <div class="col-sm">
-        <p class="lead regular-text-resume">
-            {{experience.name}}
-        </p>
+        <div style="cursor: default;" id="hoverbox-experience-{{experienceCounter}}" {% if experienceCounter == 0%}
+            class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
+            class="lead regular-text-resume bg-light">
+            <b>{{experience.name}}</b>
+            {% if experience.period != ""%}<li>{{experience.period}}</li>{% endif %}
+            {% if experience.function != ""%}<li>{{experience.function}}</li>{% endif %}
+        </div>
     </div>
+    {% assign experienceCounter = experienceCounter | plus: 1 %}
     {% endfor %}
 </div>
+
+<div class="display-custom-heading text-center">🛠 Skills</div>
+<div class="separator"></div>
+<div class="row text-black">
+    {% assign tables = 2 %}
+    {% assign itemsPerTable = site.data.resume.skills.size | divided_by: tables %}
+    {% for j in (1..tables) %}
+    <div class="col-sm">
+        <div class="lead regular-text-resume bg-light">
+            <table class="table">
+                <thead>
+                    <tr class="d-flex">
+                        <th class="col-8">Skill</th>
+                        <th class="col-4">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% assign temp = j | minus: 1 %}
+                    {% assign start = itemsPerTable | times: temp %}
+                    {% assign stop = itemsPerTable | times: j | minus: 1%}
+                    {% for k in (start..stop) %}
+                    <tr class="d-flex">
+                        <td class="col-8">{{site.data.resume.skills[k].name}}</td>
+                        <td class="col-4">
+                            {% assign num = site.data.resume.skills[k].score %}
+                            {% for i in (1..num) %}
+                            ⭐️
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+<div class="display-custom-heading text-center">🙈 Trivia</div>
+<div class="separator"></div>
+{% assign triviaCounter = 0 %}
+{% for trivia in site.data.resume.trivia %}
+<div class="row text-black"></div>
+<div class="col-sm">
+    <div style="cursor: default;" id="hoverbox-trivia-{{triviaCounter}}" {% if triviaCounter == 0%}
+        class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
+        class="lead regular-text-resume bg-light">
+        <b>{{trivia.name}}</b>
+        <p>{{trivia.description}}</p>
+    </div>
+</div>
+{% assign triviaCounter = triviaCounter | plus: 1 %}
+{% endfor %}

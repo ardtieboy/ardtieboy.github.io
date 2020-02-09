@@ -61,8 +61,8 @@ body {
 
 .regular-text-resume {
   line-height: 1.5em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 #profile-pic {
@@ -73,7 +73,7 @@ body {
 
 #profile-pic-resume {
   border-radius: 50%;
-  width: 6em;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -127,5 +127,6 @@ body {
   padding: 0.5em 0 0 0;
 }
 
-
-
+[id^="hoverbox"] {
+  color: gainsboro
+}

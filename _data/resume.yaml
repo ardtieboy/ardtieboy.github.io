@@ -1,16 +1,74 @@
 education:
-  - name: 6WeWi
-    type: /
-  - name: Architecture
-    type: Master
-  - name: Electronical Engineer
-    type: Master
-  - name: Artifical Intelligence @ Home
-    type: Microdegree
+  - name: Science and Mathematics
+    period: Sep '05 - June '11 
+    result: ""
+    school: Instituut Mater Amabilis
+    thesis: ""
+  - name: "Bacherlor Science: Architecture"
+    period: Sep '11 - Jun '12
+    result: Did not finish
+    school: University of Ghent  
+    thesis: ""
+  - name: "Bachelor Science: Electronics/ICT"
+    period: Sep '12 - Jun '15
+    result: Magne Cum Laude
+    school: University of Ghent  
+    thesis: ""
+  - name: "Master Science: Electronics/ICT"
+    period: Sep '15 - Jun '16
+    result: Magne Cum Laude  
+    school: University of Ghent  
+    thesis: ASM-model to classify pain
+  - name: "Microdegree: AI@Home"
+    period: Sep '19 - Jun '20
+    result: ""
+    school: HoWest
+    thesis: ""
   
 experience:
   - name: Telenet (9lives)
-    function: Editor
-  - name: \'t Ganzeke
+    function: Editor gaming website
+    period: "'13 - now"
+  - name: "'t Ganzeke"
+    function: Waiter
+    period: "'10 - '14"
+  - name: "GTV"
+    function: Electronics Engineer
+    period: "Summer '15'"
   - name: Melexis
+    function: IT Business Analyst
+    period: "'16 - now"
   
+trivia:
+  - name: Hobbies
+    description: "First of all I like doing sports; therefore I play competitive basketball at BBC
+    Gullegem. Next to that I like running and cycling. Also I enjoy spending time with my dog; both making long walks and doing some obedience training. 
+    Furthermore; gaming is a passion of mine. I can	enjoy spending some	hours in the virtual world. A few years back I was able to combine this hobby
+    with another passion of mine, which is writing, at 9lives.be. Finally I like reading up and learning about tech and electronics."
+  - name: Personal
+    description: "Happily living together with my wife te be Steffi and my dog Nalu in Gullegem, Belgium"
+  - name: Job preference
+    description: "Although I like talking to people, I can also enjoy programming a full day without meetings. My perfect job consists out of 
+    60-80% coding and 20-40% analytical tasks."
+
+skills:
+  - name: Java/Kotlin (Spring, Camel, Maven)
+    score: 4
+  - name: Python (Flask, Django, Scikit, Sklearn)
+    score: 4
+  - name: Containers (Docker, Kubernetes)
+    score: 4
+  - name: CI/CD (Gitlab, Github Actions, Terraform)
+    score: 3
+  - name: CSS, HTML, Javascript
+    score: 3
+  - name: Analysis (Volere, Agile, DDD)
+    score: 3
+  - name: Golang, Groovy
+    score: 2
+  - name: ISA95
+    score: 1
+  - name: Dutch, English
+    score: 5
+  - name: French
+    score: 2
