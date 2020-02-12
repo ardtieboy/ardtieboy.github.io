@@ -1,6 +1,8 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ardtieboy" # the name of your site, e.g. ACME Corp.
+google_analytics_ua: 'UA-118393746-3'
+
 
 plugins:
   - jekyll-seo-tag
