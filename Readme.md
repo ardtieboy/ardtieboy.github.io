@@ -4,7 +4,15 @@
 
 Running:
 
-    jekyll serve
+    bundle exec jekyll serve --livereload
+
+Update gems:
+
+    bundle update
+
+Install gems:
+
+    bundle install
 
 ## Resources
 
