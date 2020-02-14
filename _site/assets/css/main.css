@@ -2735,7 +2735,7 @@ body { background: #FFFFFF; background: -webkit-linear-gradient(to right, #FFFFF
 
 #profile-pic { border-radius: 50%; width: inherit; margin-bottom: 1em; }
 
-#profile-pic-resume { border-radius: 50%; width: 100%; margin-left: auto; margin-right: auto; }
+#profile-pic-resume { border-radius: 50%; width: 100%; margin-left: auto; margin-right: auto; margin-bottom: 1em; margin-top: auto; }
 
 @media (max-width: 768px) { #sidebar { margin-left: -17rem; }
   #sidebar.active { margin-left: 0; }
@@ -2753,7 +2753,7 @@ body { background: #FFFFFF; background: -webkit-linear-gradient(to right, #FFFFF
 
 .display-custom-heading { font-size: 3.5rem; font-weight: 100; line-height: 1.2; padding: 0.5em 0 0 0; }
 
-[id^="hoverbox"] { color: gainsboro; }
+[id^="hoverbox"] { color: gainsboro; margin-bottom: 0.5em; }
 
 #carousel-image { width: 200px; /* width of container */ height: 200px; /* height of container */ object-fit: cover; object-position: 20% 10px; border: 5px solid black; }
 
