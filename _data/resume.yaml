@@ -6,28 +6,28 @@ education:
     thesis: ""
   - name: "Bacherlor Science: Architecture"
     period: Sep '11 - Jun '12
-    result: Did not finish
+    result: ""
     school: University of Ghent  
     thesis: ""
   - name: "Bachelor Science: Electronics/ICT"
     period: Sep '12 - Jun '15
     result: Magne Cum Laude
     school: University of Ghent  
-    thesis: ""
+    thesis: "An introduction to wireless communications"
   - name: "Master Science: Electronics/ICT"
     period: Sep '15 - Jun '16
     result: Magne Cum Laude  
     school: University of Ghent  
-    thesis: ASM-model to classify pain
+    thesis: Using Active Shape Models to classify pain
   - name: "Microdegree: AI@Home"
     period: Sep '19 - Jun '20
-    result: ""
-    school: HoWest
+    result: "Ongoing"
+    school: Howest
     thesis: ""
   
 experience:
   - name: Telenet (9lives)
-    function: Editor gaming website
+    function: Editor
     period: "'13 - now"
   - name: "'t Ganzeke"
     function: Waiter
@@ -36,7 +36,7 @@ experience:
     function: Electronics Engineer
     period: "Summer '15'"
   - name: Melexis
-    function: IT Business Analyst
+    function: IT Business Analyst/Developer
     period: "'16 - now"
   
 trivia:

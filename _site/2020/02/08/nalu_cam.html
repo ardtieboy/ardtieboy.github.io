@@ -94,28 +94,29 @@
     <div class="separator"></div>
     <h2 id="introduction">Introduction</h2>
 
-<p>In the summer of ‘18 we decided to buy a dog. Our little friend (a.k.a. Nalu) would arrive in September, meaning summer holidays were over and we’d be back to work by the time of his arrival. During his first days, I was able to take some days off to keep an eye on him. However after a week his first he had to spent his first day ‘home alone’.</p>
+<p>In the summer of ‘18 we decided to buy a dog. Our little friend (also know as Nalu 🐶) would arrive in September, meaning summer holidays were over and we’d head back to work by the time of his arrival. During his first days, I was able to take some days off to keep an eye on him. However after a week he had to spent his first day ‘home alone’.</p>
 
 <p>I’d wanted to keep an eye open on my little friend when I was at work, so I bought a Raspberry Pi, a PiCam a Servo-arm and started hacking something together.</p>
 
 <h2 id="tech">Tech</h2>
 
 <p>When I started working on this project, I was pretty familiar with the Raspberry Pi-hardware and related Python-libraries such as gpiozero and picamera. 
-The only thing I needed was some kind of server to tie all lose ends together. At that time we were experimenting at Melexis with the Django-framework.
+I experimented already quite some time with the picamera, but I was still struggling with setting up a streaming-like server.
+Thus the only thing I needed was some kind of server to tie all loose ends together. At that time we were experimenting at my job with the Django-framework.
 It’s was tempting to start playing here with Django as well, but I realised quite quickly Django would be overkill.</p>
 
 <p>I decided to switch to something more lightweight (and less complex) and ended up with Flask. As a matter of fact, I forked a <a href="https://github.com/miguelgrinberg/campy">repository</a> on github which included already a big part of the work that needed to be done. I added authentication, a new front-end template and integration with my Servo-arm
 and the <strong>NaluCam</strong> was born. The code quality is not that good and testing these kind of things we’re pretty hard since we’re talking about hardware integrations.</p>
 
-<p>However the <strong>NaluCam</strong> still does the trick and is still used on a daily basis.</p>
+<p>However the <strong>NaluCam</strong> still does the trick and is still being used on a daily basis.</p>
 
 <h2 id="improvements-and-further-work">Improvements and further work</h2>
 
 <p>In general the code needs to be cleaned up. I also need to find a better way of testing these kind of things in which hardware is included. Certainly the integration with 
-the camera is a pain in the ass; over SSH it’s impossible to display images. This means that everytime I’m working on this project, I need to hook up my Raspberry Pi to a monitor, keyboard and mouse.</p>
+the camera is a pain in the ass; over SSH it’s impossible to display images or get a liveview. This means that every time I’m working on this project, I need to hook up my Raspberry Pi to a monitor, keyboard and mouse; which sucks if you’re used to a MBP with awesome editors.</p>
 
 <p>Also some cool features such as temperature monitoring and voice integration could be added. It could also be a cool idea to add some kind of small engines and turn the 
-NaluCam into some kind of entertaining superdeluxe ‘ball fetcher’-machine which can be remotely controlled? Want to contribute? For the project <a href="https://github.com/ardtieboy/campy">here</a>.</p>
+NaluCam into some kind of entertaining superdeluxe ‘ball fetcher’-machine which can be remotely controlled? Want to contribute? Fork the project <a href="https://github.com/ardtieboy/campy">here</a>.</p>
 
 
     <h2>Images</h2>
