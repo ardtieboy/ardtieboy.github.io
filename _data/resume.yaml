@@ -1,6 +1,6 @@
 education:
   - name: Science and Mathematics
-    period: Sep '05 - June '11 
+    period: Sep '05 - Jun '11 
     result: ""
     school: Instituut Mater Amabilis
     thesis: ""
@@ -11,15 +11,15 @@ education:
     thesis: ""
   - name: "Bachelor Science: Electronics/ICT"
     period: Sep '12 - Jun '15
-    result: Magne Cum Laude
+    result: Magna Cum Laude
     school: University of Ghent  
     thesis: "An introduction to wireless communications"
   - name: "Master Science: Electronics/ICT"
     period: Sep '15 - Jun '16
-    result: Magne Cum Laude  
+    result: Magna Cum Laude  
     school: University of Ghent  
     thesis: Using Active Shape Models to classify pain
-  - name: "Microdegree: AI@Home"
+  - name: "Microdegree: Artifical Intelligence @Home"
     period: Sep '19 - Jun '20
     result: "Ongoing"
     school: Howest
@@ -29,26 +29,30 @@ experience:
   - name: Telenet (9lives)
     function: Editor
     period: "'13 - now"
+    description: Writing (p)reviews, news and covering press trips
   - name: "'t Ganzeke"
     function: Waiter
     period: "'10 - '14"
+    description: Serving customers in the restaurant
   - name: "GTV"
     function: Electronics Engineer
     period: "Summer '15'"
+    description: Optimization of a battery tester
   - name: Melexis
     function: IT Business Analyst/Developer
     period: "'16 - now"
+    description: Analysing internal customer needs + developing, deploying, maintaining and testing solutions
   
 trivia:
   - name: Hobbies
     description: "First of all I like doing sports; therefore I play competitive basketball at BBC
-    Gullegem. Next to that I like running and cycling. Also I enjoy spending time with my dog; both making long walks and doing some obedience training. 
+    Gullegem. Next to that I like running and cycling as well. I also enjoy spending time with my dog; both making long walks and doing some obedience training. 
     Furthermore; gaming is a passion of mine. I can	enjoy spending some	hours in the virtual world. A few years back I was able to combine this hobby
-    with another passion of mine, which is writing, at 9lives.be. Finally I like reading up and learning about tech and electronics."
+    with another passion of mine, which is writing at 9lives.be. Finally I like reading up and learning about tech and electronics."
   - name: Personal
     description: "Happily living together with my fiancé and dog Nalu in Gullegem, Belgium"
   - name: Job preference
-    description: "Although I like talking to people, I can also enjoy programming all day without meetings. My perfect job schedule consists out of 
+    description: "Although I like talking to people, I can enjoy programming all day without meetings as well. My perfect job schedule consists out of 
     7/10 coding and 3/10 analytical tasks."
 
 skills:

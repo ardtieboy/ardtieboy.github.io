@@ -4,23 +4,23 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>NaluCam - Ardtieboy</title>
+  <title>Card Against Humanity Generator - Ardtieboy</title>
   <link rel="shortcut icon" type="image/png" href="/favicon.png" />
   <link rel="stylesheet" href="/assets/css/main.css">
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>NaluCam | Ardtieboy</title>
+<title>Card Against Humanity Generator | Ardtieboy</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="NaluCam" />
+<meta property="og:title" content="Card Against Humanity Generator" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Introduction" />
-<meta property="og:description" content="Introduction" />
-<link rel="canonical" href="http://localhost:4000/2020/02/08/nalu_cam.html" />
-<meta property="og:url" content="http://localhost:4000/2020/02/08/nalu_cam.html" />
+<meta name="description" content="Introduction Stay tuned…" />
+<meta property="og:description" content="Introduction Stay tuned…" />
+<link rel="canonical" href="http://localhost:4000/2020/02/16/cah_generator.html" />
+<meta property="og:url" content="http://localhost:4000/2020/02/16/cah_generator.html" />
 <meta property="og:site_name" content="Ardtieboy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-08T00:00:00+01:00" />
+<meta property="article:published_time" content="2020-02-16T00:00:00+01:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2020/02/08/nalu_cam.html","headline":"NaluCam","dateModified":"2020-02-08T00:00:00+01:00","datePublished":"2020-02-08T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/02/08/nalu_cam.html"},"description":"Introduction","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/2020/02/16/cah_generator.html","headline":"Card Against Humanity Generator","dateModified":"2020-02-16T00:00:00+01:00","datePublished":"2020-02-16T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/02/16/cah_generator.html"},"description":"Introduction Stay tuned…","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -80,15 +80,15 @@
     <ul class="nav flex-column bg-white mb-0">
         
         <li class="nav-item">
-            <a href="/2020/02/16/cah_generator.html"  class="nav-link text-dark font-italic">
+            <a href="/2020/02/16/cah_generator.html" 
+                class="nav-link text-dark font-italic bg-light"  class="nav-link text-dark font-italic">
                 <i class="fa fa-space-shuttle mr-3 text-black fa-fw"></i>
                 Card Against Humanity Generator
             </a>
         </li>
         
         <li class="nav-item">
-            <a href="/2020/02/08/nalu_cam.html" 
-                class="nav-link text-dark font-italic bg-light"  class="nav-link text-dark font-italic">
+            <a href="/2020/02/08/nalu_cam.html"  class="nav-link text-dark font-italic">
                 <i class="fa fa-space-shuttle mr-3 text-black fa-fw"></i>
                 NaluCam
             </a>
@@ -97,33 +97,10 @@
     </ul>
 
 </div>
-    <div class="display-custom-heading text-center">NaluCam</div>
+    <div class="display-custom-heading text-center">Card Against Humanity Generator</div>
     <div class="separator"></div>
     <h2 id="introduction">Introduction</h2>
-
-<p>In the summer of ‘18 we decided to buy a dog. Our little friend (also know as Nalu 🐶) would arrive in September, meaning summer holidays were over and we’d head back to work by the time of his arrival. During his first days, I was able to take some days off to keep an eye on him. However after a week he had to spent his first day ‘home alone’.</p>
-
-<p>I’d wanted to keep an eye open on my little friend when I was at work, so I bought a Raspberry Pi, a PiCam a Servo-arm and started hacking something together.</p>
-
-<h2 id="tech">Tech</h2>
-
-<p>When I started working on this project, I was pretty familiar with the Raspberry Pi-hardware and related Python-libraries such as gpiozero and picamera. 
-I experimented already quite some time with the picamera, but I was still struggling with setting up a streaming-like server.
-Thus the only thing I needed was some kind of server to tie all loose ends together. At that time we were experimenting at my job with the Django-framework.
-It’s was tempting to start playing here with Django as well, but I realised quite quickly Django would be overkill.</p>
-
-<p>I decided to switch to something more lightweight (and less complex) and ended up with Flask. As a matter of fact, I forked a <a href="https://github.com/miguelgrinberg/campy">repository</a> on github which included already a big part of the work that needed to be done. I added authentication, a new front-end template and integration with my Servo-arm
-and the <strong>NaluCam</strong> was born. The code quality is not that good and testing these kind of things we’re pretty hard since we’re talking about hardware integrations.</p>
-
-<p>However the <strong>NaluCam</strong> still does the trick and is still being used on a daily basis.</p>
-
-<h2 id="improvements-and-further-work">Improvements and further work</h2>
-
-<p>In general the code needs to be cleaned up. I also need to find a better way of testing these kind of things in which hardware is included. Certainly the integration with 
-the camera is a pain in the ass; over SSH it’s impossible to display images or get a liveview. This means that every time I’m working on this project, I need to hook up my Raspberry Pi to a monitor, keyboard and mouse; which sucks if you’re used to a MBP with awesome editors.</p>
-
-<p>Also some cool features such as temperature monitoring and voice integration could be added. It could also be a cool idea to add some kind of small engines and turn the 
-NaluCam into some kind of entertaining superdeluxe ‘ball fetcher’-machine which can be remotely controlled? Want to contribute? Fork the project <a href="https://github.com/ardtieboy/campy">here</a>.</p>
+<p>Stay tuned…</p>
 
 
     <h2>Images</h2>
@@ -131,22 +108,6 @@ NaluCam into some kind of entertaining superdeluxe ‘ball fetcher’-machine wh
       <div style="margin-left: auto; margin-right: auto; width: 50%;">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
-            
-            <div  class="carousel-item active"  class="carousel-item">
-              <img class="d-block w-100 " src="/assets/images/nalucam_pic1.jpeg" alt="First slide">
-            </div>
-            
-            <div  class="carousel-item">
-              <img class="d-block w-100 " src="/assets/images/nalucam_pic2.jpeg" alt="First slide">
-            </div>
-            
-            <div  class="carousel-item">
-              <img class="d-block w-100 " src="/assets/images/nalucam_login.png" alt="First slide">
-            </div>
-            
-            <div  class="carousel-item">
-              <img class="d-block w-100 " src="/assets/images/nalucam_navigate.png" alt="First slide">
-            </div>
             
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

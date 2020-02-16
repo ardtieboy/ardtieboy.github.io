@@ -24,7 +24,7 @@ title: "Ard's homepage"
             where applicable or ask questions if something’s not clear to me; I’m responsible for my own learning.
             I’m up for challenges in which I can freely interact with others, have some creative freedom and from which
             I can learn a lot.
-            I have a preference for jobs in which I can combine analytical task with coding, though I prefer the latter
+            I have a preference for jobs in which I can combine analytical tasks with coding, though I prefer the latter
             one.
         </p>
     </div>
@@ -35,14 +35,14 @@ title: "Ard's homepage"
     {% assign educationCounter = 0 %}
     {% for education in site.data.resume.education %}
     <div class="col-sm">
-        <div style="cursor: default; height: 12em;" id="hoverbox-education-{{educationCounter}}"
+        <div style="cursor: default; height: 15em;" id="hoverbox-education-{{educationCounter}}"
             {% if educationCounter == 0%} class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
             class="lead regular-text-resume bg-light">
             <b>{{education.name}}</b>
-            {% if education.period != ""%}<li>{{education.period}}</li>{% endif %}
-            {% if education.school != ""%}<li>{{education.school}}</li>{% endif %}
-            {% if education.result != ""%}<li>{{education.result}}</li>{% endif %}
-            {% if education.thesis != ""%}<li>{{education.thesis}}</li>{% endif %}
+            {% if education.period != ""%}<li>🗓: {{education.period}}</li>{% endif %}
+            {% if education.school != ""%}<li>🏫: {{education.school}}</li>{% endif %}
+            {% if education.result != ""%}<li>🎓: {{education.result}}</li>{% endif %}
+            {% if education.thesis != ""%}<li>📕: {{education.thesis}}</li>{% endif %}
         </div>
     </div>
     {% assign educationCounter = educationCounter | plus: 1 %}
@@ -55,12 +55,13 @@ title: "Ard's homepage"
     {% assign experienceCounter = 0 %}
     {% for experience in site.data.resume.experience %}
     <div class="col-sm">
-        <div style="cursor: default;" id="hoverbox-experience-{{experienceCounter}}" {% if experienceCounter == 0%}
-            class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
+        <div style="cursor: default; height: 13em;" id="hoverbox-experience-{{experienceCounter}}"
+            {% if experienceCounter == 0%} class="lead regular-text-resume bg-light shadow-drop-2-center" {% endif %}
             class="lead regular-text-resume bg-light">
             <b>{{experience.name}}</b>
-            {% if experience.period != ""%}<li>{{experience.period}}</li>{% endif %}
-            {% if experience.function != ""%}<li>{{experience.function}}</li>{% endif %}
+            {% if experience.period != ""%}<li>🗓: {{experience.period}}</li>{% endif %}
+            {% if experience.function != ""%}<li>💼: {{experience.function}}</li>{% endif %}
+            {% if experience.description != ""%}<li>📝: {{experience.description}}</li>{% endif %}
         </div>
     </div>
     {% assign experienceCounter = experienceCounter | plus: 1 %}
