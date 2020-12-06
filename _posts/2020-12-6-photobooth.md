@@ -1,9 +1,9 @@
 ---
 layout: project
-title:  "Card Against Humanity Generator"
+title:  "Photobooth"
 pics: 
 
 ---
 
 ## Introduction
-Stay tuned...
+Stay tuned for more...
