@@ -2,7 +2,7 @@
 <div class="vertical-nav bg-white" id="sidebar">
     <div class="py-4 px-3 mb-4 bg-light">
         <div class="media d-flex align-items-center">
-            <a href="/"><img src="{{ "/assets/images/avatar.png" | relative_url }}" alt="..." width="65"
+            <a href="/"><img src="{{ " /assets/images/avatar.png" | relative_url }}" alt="..." width="65"
                     class="mr-3 rounded-circle img-thumbnail shadow-sm"></a>
             <div class="media-body">
                 <h4 class="m-0">Ard Scheirlynck</h4>
@@ -15,14 +15,14 @@
 
     <ul class="nav flex-column bg-white mb-0">
         <li class="nav-item">
-            <a href="{{ "index.html" | relative_url }}" {% if page.url == "/" | relative_url %}
+            <a href="{{ " index.html" | relative_url }}" {% if page.url=="/" | relative_url %}
                 class="nav-link text-dark font-italic bg-light" {% endif %} class="nav-link text-dark font-italic">
                 <i class="fa fa-home mr-3 text-black fa-fw"></i>
                 Home
             </a>
         </li>
         <li class="nav-item">
-            <a href="{{ "resume.html" | relative_url }}" {% if page.url == "/resume.html" | relative_url %}
+            <a href="{{ " resume.html" | relative_url }}" {% if page.url=="/resume.html" | relative_url %}
                 class="nav-link text-dark font-italic bg-light" {% endif %} class="nav-link text-dark font-italic">
                 <i class="fa fa-address-card mr-3 text-black fa-fw"></i>
                 Resume
@@ -37,12 +37,12 @@
         </li> -->
     </ul>
 
-    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Projects</p>
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0 mt-5">Projects</p>
 
     <ul class="nav flex-column bg-white mb-0">
         {% for post in site.posts %}
         <li class="nav-item">
-            <a href="{{ post.url | relative_url }}" {% if page.url == post.url %}
+            <a href="{{ post.url | relative_url }}" {% if page.url==post.url %}
                 class="nav-link text-dark font-italic bg-light" {% endif %} class="nav-link text-dark font-italic">
                 <i class="fa fa-space-shuttle mr-3 text-black fa-fw"></i>
                 {{ post.title }}
