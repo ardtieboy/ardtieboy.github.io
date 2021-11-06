@@ -21,3 +21,5 @@ A website was built as well to present the photos to the user instead of printin
 The photobooth has been used multiple times already and is a great succes!
 
 A special thanks goes out to Brecht, Morgane and Jurgen for helping me realizing this project!
+
+A link to the website can be found here: [https://photobooth.starlu.be](https://photobooth.starlu.be)
