@@ -2,11 +2,11 @@
 layout: project
 title:  "Photobooth"
 pics: 
-    - "/assets/images/p5.jpg"
     - "/assets/images/p1.jpg"
     - "/assets/images/p2.jpg"
     - "/assets/images/p3.jpg"
     - "/assets/images/p4.jpg"
+    - "/assets/images/p5.JPG"
     - "/assets/images/p7.jpg"
 
 ---
